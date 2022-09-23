@@ -13,7 +13,7 @@ public class SkillsController {
     public String home() {
         return "<html>" +
                     "<body>" +
-                        "<h1>Skills Tracker</h1>" +
+                        "<h1>**Skills Tracker**</h1>" +
                             "<ol>" +
                                 "<li>Java</li>" +
                                 "<li>JavaScript</li>" +
@@ -31,29 +31,29 @@ public class SkillsController {
                     "<body>" +
                         "<form method='post' action=''>" +
                             "<p><input placeholder='name' name='name'></p>" +
-                            "<p><label for='firstFavorite'>First Favorite Programming Language: </label>" +
+                            "<p><label for='firstFavorite'>Your first favorite programming language: </label>" +
                                 "<select name='favoriteOne' id='firstFavorite'>" +
-                                    "<option value='java'>Java</option>" +
-                                    "<option value='javascript'>JavaScript</option>" +
-                                    "<option value='python'>Python</option>" +
-                                    "<option value='c#'>C#</option>" +
-                                    "<option value='sql'>SQL</option>" +
+                                    "<option value='Java'>Java</option>" +
+                                    "<option value='JavaScript'>JavaScript</option>" +
+                                    "<option value='Python'>Python</option>" +
+                                    "<option value='C#'>C#</option>" +
+                                    "<option value='SQL'>SQL</option>" +
                                 "</select></p>" +
-                            "<p><label for='secondFavorite'>Second Favorite Programming Language: </label>" +
+                            "<p><label for='secondFavorite'>Your second favorite language: </label>" +
                                 "<select name='favoriteTwo' id='secondFavorite'>" +
-                                    "<option value='java'>Java</option>" +
-                                    "<option value='javascript'>JavaScript</option>" +
-                                    "<option value='python'>Python</option>" +
-                                    "<option value='c#'>C#</option>" +
-                                    "<option value='sql'>SQL</option>" +
+                                    "<option value='Java'>Java</option>" +
+                                    "<option value='JavaScript'>JavaScript</option>" +
+                                    "<option value='Python'>Python</option>" +
+                                    "<option value='C#'>C#</option>" +
+                                    "<option value='SQL'>SQL</option>" +
                                 "</select></p>" +
-                            "<p><label for='thirdFavorite'>Third Favorite Programming Language: </label>" +
+                            "<p><label for='thirdFavorite'>Your third favorite: </label>" +
                                 "<select name='favoriteThree' id='thirdFavorite'>" +
-                                    "<option value='java'>Java</option>" +
-                                    "<option value='javascript'>JavaScript</option>" +
-                                    "<option value='python'>Python</option>" +
-                                    "<option value='c#'>C#</option>" +
-                                    "<option value='sql'>SQL</option>" +
+                                    "<option value='Java'>Java</option>" +
+                                    "<option value='JavaScript'>JavaScript</option>" +
+                                    "<option value='Python'>Python</option>" +
+                                    "<option value='C#'>C#</option>" +
+                                    "<option value='SQL'>SQL</option>" +
                               "</select></p>" +
                             "<p><input type='submit' value='Submit'></p>" +
                         "</form>" +
@@ -66,12 +66,12 @@ public class SkillsController {
         return "<html>" +
                     "<body>" +
                         "<h1>" + name + "</h1>" +
-                            "<h2>Your Favorite Languages</h2>" +
-                                "<ol>" +
+                            "<h2>Here are your favorite programming languages:</h2>" +
+                                "<ul>" +
                                     "<li>" + favoriteOne + "</li>" +
                                     "<li>" + favoriteTwo + "</li>" +
                                     "<li>" + favoriteThree + "</li>" +
-                                "</ol>" +
+                                "</ul>" +
                     "</body>" +
                 "</html>";
     }
